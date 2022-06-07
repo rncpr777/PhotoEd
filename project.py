@@ -1,18 +1,10 @@
 from PIL import Image
 
 
-run = True
-while run:
-    print("***************************************")
-    print("На сколько процентов вы хотите изменить яркость:")
-    delta = int(input())
-    if not(delta <= 100 and delta >= -100):
-        print("!!!ОШИБКА!!!")
-        print("Вводимое число должно быть в пределе от -100% до 100%")
-    else:
-        delta = 1 + (delta / 100)
-        run = False
-        break
+print("***************************************")
+print("На сколько процентов вы хотите изменить яркость:")
+delta = int(input())
+delta = 1 + (delta / 100)
 img = Image.open("photo.png")
 pixels = img.load()
 width, height = img.size
