@@ -42,11 +42,6 @@ class Proj(QWidget):
         img.save("res.png")
         print("Готово! :)")
 
-    #def paintEvent(self, Event):
-        #qp = QPainter
-        #qp.setBrush(QColor(200, 10, 10))
-        #qp.drawRect(0, 0, 100, 100)
-
 
 if __name__ == "__main__":
     app = QApplication(sys.argv)
