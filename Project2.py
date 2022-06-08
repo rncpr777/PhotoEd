@@ -9,6 +9,7 @@ print("3. 5:4")
 print("4. 4:3")
 print("5. 3:4")
 print("6. 1:1")
+print("7. Не менять")
 soot = int(input())
 print("******************************************")
 print("Вы хотите сделать изображение черно-белым?")
@@ -44,5 +45,7 @@ elif soot == 5:
 elif soot == 6:
     height = width
     img = img.resize((width, height))
+if chb == True:
+    img = img.convert("L")
 img.save("res.png")
 print("Готово! :)")
